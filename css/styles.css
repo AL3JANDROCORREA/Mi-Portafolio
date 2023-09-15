@@ -1,0 +1,680 @@
+
+html{
+    background-image:  linear-gradient(#7785FF, #5F349B, #3D137D,#300B6D,#3B115F,#160D4D ,#010010);
+    align-items: center;
+    padding: 10px;
+}
+body{
+    background-color: transparent !important;
+    font-family: 'Raleway', sans-serif;
+}
+.neon-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 25px #f01b1b;
+    padding: 20px;
+    position: fixed;
+    z-index: 10000;
+    top: 40%;
+    background-color: rgb(74, 74, 148);
+}
+.neon-link {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.neon-link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    transition: .5s;
+}
+.neon-link img:hover{
+    transform: scale(1.2);
+}
+.neon-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+*, ::after, ::before {
+    border-radius: 10px;
+}
+
+main{
+    padding: 10px;
+}
+.color{
+    background-image: linear-gradient(rgba(0, 255, 0, 0.2), rgba(0, 100, 0, 0.2));
+    padding: 5px;
+}
+.navbar{
+    margin: 10px;
+}
+.carousel-inner, #habilidades,#proyectos,#estudios{
+    background-image:  linear-gradient(#112D60, #B6C0C5);
+}
+
+#informacion {
+    align-items: center; 
+    z-index: 5;
+  }
+#carouselinfo {
+    padding: 10px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+  }
+.carousel-inner{
+    height: 100%;
+    padding: 10px;
+}
+.imagen {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: 600px; 
+    height: 600px; 
+  }
+.imagen3{
+    height: 800px;
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+
+#informacion h3{
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+#informacion .texto1{
+    margin-right: 50px;
+}
+#informacion p{
+    text-align: center;
+    margin-right: 53px;
+}
+.informacion1{
+    padding: 15px;
+}
+#carouselheroCaptions .carousel-caption{
+    position: absolute;
+    z-index: 9;
+    bottom: 0%;
+}
+#carouselheroCaptions .carousel-indicators button{
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-fade .carousel-inner .carousel-item {
+    transition-property: opacity;
+}
+
+#botones{
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    justify-content: center;
+}
+#botones h3{
+    margin-top: 60px;
+}
+.row{
+    align-items: center;
+}
+
+#botones.container{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    right: 50%;
+}
+#botones.contenedor h3{
+    text-align: center;
+    margin-top: 4px;
+    color: aqua;
+    z-index: 9;
+}
+.boton {
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    
+  }
+  
+  .boton:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .boton:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 15px;
+    transition: 1s;
+  }
+  
+  .boton:hover::before {
+    filter: blur(10px);
+  }
+  
+  .boton:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  }
+#botones .boton{
+    width: 200px;
+    height: 150px;
+}
+
+#estudios{
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+}
+#estudios h2{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+}
+.sena {
+    width: 300px;
+    height: 600px;
+    background: rgb(45, 45, 45);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  
+  .sena:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(0, 0, 0);
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .sena:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .sena:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+}
+.basico {
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+    background: rgb(45, 45, 45);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .basico:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(0, 0, 0);
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .basico:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+    flex-direction: column;
+    padding: 5px;
+  }
+
+.certificados:link,
+.certificados:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ color: rgb(27, 27, 27);
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+ width: 200px;
+ height: 50px;
+ background-color: transparent;
+}
+
+.certificados:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+.certificados .texto{
+    font-size: 20px;
+   }
+   .certificados:hover .texto{
+    color: white;
+   }
+
+.certificados:active {
+ transform: translateY(-3px);
+}
+
+.certificados::after {
+ content: "";
+ display: inline-block;
+
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.certificados:hover::after {
+ background-color: rgb(0, 238, 255);
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}
+
+  .basico:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+.first-content img{
+    width: 128px;
+    height: 128px;
+}
+.first-content .imagen2{
+    width: 200px;
+    height: 80px;
+}
+span{
+    color: white;
+    font-size: 15px;  
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#proyectos{
+    background-color: blue;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+#proyectos h2{
+    color: white;
+    margin-top: 20px;
+}
+#proyectos h3{
+    color: white;
+    margin-top: 20px;
+}
+.imag{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: aqua;
+}
+#proyectos .paginas{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #112D60;
+    display: inline-block;
+
+}
+#proyectos .paginas h3{
+    font-size: 20px;
+    align-items: center;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.descripcion{
+    position: relative;
+    top: 25%;
+    color: white;
+}
+.imagen3{
+    margin: 0 auto;
+}
+#habilidades{
+    background-color: rgb(70, 49, 49);
+    margin: 10px;
+    padding: 20px;
+    
+}
+#habilidades h2{
+    color: white;
+    text-align: center;
+    
+}
+#habilidades.container{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.container .card{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg, #1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15PX;
+   
+}
+.container .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0, .5);
+}
+.container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(218, 16, 16, 0.03);
+    pointer-events: none;
+    z-index: 1;
+}
+.porcent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+    border-radius: 50%;
+}
+.text{
+    color: rgb(163, 120, 120);
+    margin-top: 10px;
+}
+.work{
+    width: 180px;
+    
+}
+.card:hover .text{
+    color: white;
+    transition: .5s;
+}
+.porcent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.card:hover .number{
+    color: white;
+    transition: .5s;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #223620;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform:  translate(5px, 5px);
+}
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - ( 440 * 50 ) / 100);
+    stroke: #dbeb2b66;
+}
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - ( 440 * 20 ) / 100);
+    stroke: #f6f3fd66;
+}
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - ( 440 * 40 ) / 100);
+    stroke: #e5ff0066;
+}
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - ( 440 * 50 ) / 100);
+    stroke: #9900ff66;
+}
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - ( 440 * 50 ) / 100);
+    stroke: #04030566;
+}
+.card:nth-child(6) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - ( 440 * 40 ) / 100);
+    stroke: #9900ff66;
+}
+#experiencia{
+    margin: 10px;
+    background-color: rgb(20, 40, 83);
+    text-align: center;
+}
+#experiencia h2{
+    color: white;
+}
+
+/* PORTATIL */
+@media screen and (min-width:1280px) and (max-width: 800px){
+    #neon-panel{
+        width: 20px;
+    }
+    #informacion p{
+        text-align: center;
+    }
+
+}
+/* AIPAD AIR*/
+@media screen and (min-width:820px) and (max-width: 1180px){
+    header{
+        display: none;
+    }
+    #informacion p{
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .imagen3{
+        margin-left: 0;
+    }
+}
+/* AIPAD MINI  */
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .imagen{
+        margin-top: -3px;
+        margin-bottom: 11px;
+    }
+    header{
+        display: none;
+    }
+    #informacion p{
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .imagen3{
+        margin-left: 0;
+    }
+}
+/* APHONE 12 PRO */
+@media screen and (min-width:390px) and (max-width: 844px){
+
+    html{
+        background-color: transparent;
+        padding: 0; 
+    }
+    header{
+        display: none;
+    }
+    .neon-panel{
+        padding: 5px;
+    }
+    #redes{
+        width: 20px;
+        position: relative;
+    }
+    main{
+        padding: 0;
+        margin: 0;
+    }
+    .imagen{
+        margin-bottom: -151px;
+    }
+    #botones h3{
+        margin-top: 15px;
+    }
+    #informacion, #botones, #estudios, #proyectos, #habilidades, #experiencia{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #botones .row.hola {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #botones .col-lg-3 {
+        flex-basis: calc(50% - 10px);
+    }
+
+    #botones .boton {
+        width: 120px;
+        min-width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center; 
+    }
+    #informacion p{
+        margin-bottom: 3rem;
+        margin-top: 10rem;
+        margin-right: 0;
+    }
+    #informacion h3{
+        margin-top: 200px;
+        margin-right: 0;
+    }
+    #informacion p.texto3{
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .imagen3{
+        margin-left: 0;
+    }
+}
+
+
